@@ -11,7 +11,7 @@
 		http://www.springframework.org/schema/websocket">
 	
 	<!-- 启用注解，并定义组件查找规则 ，mvc层只负责扫描@Controller -->  
-    <context:component-scan base-package="com.team.financial" use-default-filters="false">
+    <context:component-scan base-package="com.team" use-default-filters="false">
         <context:include-filter type="annotation"  
             expression="org.springframework.stereotype.Controller" />  
     </context:component-scan>  
@@ -69,10 +69,10 @@
 	
         
         <!-- 定义文件上传处理器 -->  
-    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+<!--    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 	    <property name="maxUploadSize" value="50097152"></property>   
 	    <property name="defaultEncoding" value="UTF-8"></property>  
-    </bean>
+    </bean>-->
     
     
     	<!-- 根据项目前端控件选择情况声明转换器，详见com.isoft91.web.base.pager.分页一体化组件扩展开发说明 -->
