@@ -81,23 +81,23 @@
 
    
 	<!--配置拦截器, 多个拦截器,顺序执行-->
- 	<!--<mvc:interceptors>
-		&lt;!&ndash; 对所有请求都拦截，公共拦截器可以有多个 &ndash;&gt;
-        &lt;!&ndash; <bean name="integralInterceptor" class="com.isoft91.space.util.IntegralInterceptor" />  &ndash;&gt;
-		&lt;!&ndash; 当设置多个拦截器时，先按顺序调用preHandle方法，然后逆序调用每个拦截器的postHandle和afterCompletion方法 &ndash;&gt;
-	    &lt;!&ndash; 多个拦截器，顺序执行 &ndash;&gt;
-        &lt;!&ndash; 积分拦截器，访问设置的请求后,执行积分规则 &ndash;&gt;
+ 	<mvc:interceptors>
+		<!-- 对所有请求都拦截，公共拦截器可以有多个 -->
+        <!-- <bean name="integralInterceptor" class="com.isoft91.space.util.IntegralInterceptor" />  -->
+		<!-- 当设置多个拦截器时，先按顺序调用preHandle方法，然后逆序调用每个拦截器的postHandle和afterCompletion方法 -->
+	    <!-- 多个拦截器，顺序执行 -->
+        <!-- 积分拦截器，访问设置的请求后,执行积分规则 -->
          <mvc:interceptor>
                  <mvc:mapping path="/**"/>
                  <mvc:exclude-mapping path="/common/**"/>
                  <mvc:exclude-mapping path="/page/**"/>
 			 	 <mvc:exclude-mapping path="/view/login/register"/>
-                 &lt;!&ndash;<mvc:exclude-mapping path="/view/**"/>&ndash;&gt;
+                 <!--<mvc:exclude-mapping path="/view/**"/>-->
                  <mvc:exclude-mapping path="/notification/detail**"/>
-                 <bean class="com.isoft91.space.util.LoginInterceptor"></bean>
+                 <bean class="com.team.finance.util.LoginInterceptor"></bean>
          </mvc:interceptor>
 
- 	</mvc:interceptors>-->
+ 	</mvc:interceptors>
 
 	
 	
