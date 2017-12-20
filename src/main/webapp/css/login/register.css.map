@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAIA,UAAS;EACP,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,IAAI",
+"sources": ["register.sass"],
+"names": [],
+"file": "register.css"
+}
