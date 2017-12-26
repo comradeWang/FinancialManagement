@@ -23,20 +23,27 @@
 
 var unlockflag = 0;
 $(function () {
+    initVertifyBlock();
+
+});
+
+/**
+ * 验证模块初始化
+ */
+function initVertifyBlock() {
     var $container = $('#vertify');
     $container.slideToUnlock({
-        text : '滑动以验证',
-        succText : '验证成功',
+        text: '滑动以验证',
+        succText: '验证成功',
         successFunc:function () {
-        	unlockflag = 1;
-           $("#login-submit").removeAttr("disabled");
+            unlockflag = 1;
+            $("#login-submit").removeAttr("disabled");
         }
     });
     $(window).resize(function () {
         $('.slide-to-unlock-bg').width($container.width());
     });
-      	
-})
+}
 /**
 * @author: WangXinYu
 * @param: 

@@ -1,8 +1,33 @@
 @charset "UTF-8"
-
+@include add-foundation-colors
 $color-white: #fff
 
 body,html
   margin: 0
   padding: 0
   height: 100%
+body
+  background: url("../../img/bg_login_5.png") no-repeat center
+  background-size: cover
+  .register-panel
+    position: relative
+    width: 35vw
+    height: 80vh
+    background-color: rgba(0,0,0,0.7)
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    border-radius: 10px
+    color: #fff
+    .register-title
+      font-size: 1.5rem
+      padding: 2vh 0
+    .register-form
+      padding: 0 2vw
+      label
+        color: #ffffff
+        font-size: 1.1rem
+    .register-btn-container
+      a
+        margin: 0 auto
+
