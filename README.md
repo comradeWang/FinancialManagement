@@ -1,57 +1,48 @@
-# [Foundation for Sites](http://foundation.zurb.com)
+# Foundation for Sites Template
 
-[![Build Status](https://travis-ci.org/zurb/foundation-sites.svg?branch=develop)](https://travis-ci.org/zurb/foundation-sites)
-[![npm version](https://badge.fury.io/js/foundation-sites.svg)](https://badge.fury.io/js/foundation-sites)
-[![Bower version](https://badge.fury.io/bo/foundation-sites.svg)](https://badge.fury.io/bo/foundation-sites)
-[![Gem Version](https://badge.fury.io/rb/foundation-rails.svg)](https://badge.fury.io/rb/foundation-rails)
-[![CDNJS](https://img.shields.io/cdnjs/v/foundation.svg)](https://cdnjs.com/libraries/foundation)
-[![dependencies Status](https://david-dm.org/zurb/foundation-sites/status.svg)](https://david-dm.org/zurb/foundation-sites)
-[![devDependencies Status](https://david-dm.org/zurb/foundation-sites/dev-status.svg)](https://david-dm.org/zurb/foundation-sites?type=dev)
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/zurb/foundation-sites?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
 
-Foundation is the most advanced responsive front-end framework in the world. Quickly go from prototype to production, building sites or apps that work on any kind of device with Foundation. Includes a fully customizable, responsive grid, a large library of Sass mixins, commonly used JavaScript plugins, and full accessibility support.
+This is the basic starter project for [Foundation for Sites 6](http://foundation.zurb.com/sites). It includes a Sass compiler and a starter HTML file for you.
 
-## Getting Started
+## Installation
 
-The quickest way to get started is with the [basic CSS download](http://foundation.zurb.com/sites/download/). You can get versions with every component, essential ones only, or a custom build.
+To use this template, your computer needs:
 
-If you're a Sass user, we have two starter project templates, the [Basic Template](https://github.com/zurb/foundation-sites-template) and the [ZURB Template](https://github.com/zurb/foundation-zurb-template). You can install them by manually downloading them from GitHub, or using the [Foundation CLI](https://github.com/zurb/foundation-cli).
+- [NodeJS](https://nodejs.org/en/) (0.12 or greater)
+- [Git](https://git-scm.com/)
 
-Lastly, if you're rolling your own setup, you can install Foundation through a variety of [package managers](http://foundation.zurb.com/sites/docs/installation.html#package-managers).
+This template can be installed with the Foundation CLI, or downloaded and set up manually.
 
-## Documentation
+### Using the CLI
 
-The documentation can be found at <https://foundation.zurb.com/sites/docs>. To run the documentation locally on your machine, you need [Node.js](https://nodejs.org/en/) installed on your computer. (Your Node.js version must be **4.0** or higher.)
-
-Run these commands to set up the documentation:
+Install the Foundation CLI with this command:
 
 ```bash
-git clone https://github.com/zurb/foundation-sites
-cd foundation-sites
-npm install
+npm install foundation-cli --global
 ```
 
-Then run `npm start` to compile the documentation. When it finishes, a new browser window will open pointing to a BrowserSync server displaying the documentation.
+Use this command to set up a blank Foundation for Sites project with this template:
 
-## Training
+```bash
+foundation new --framework sites --template basic
+```
 
-Want the guided tour to Foundation from the team that built it? The ZURB team offers comprehensive training courses for developers of all skill levels. If you're new to Foundation, check out the [Introduction to Foundation Course](http://zurb.com/university/foundation-intro?utm_source=Github%20Repo&utm_medium=website&utm_campaign=readme&utm_content=readme%20training%20link) to kickstart your skills, amplify your productivity, and get a comprehensive overview of everything Foundation has to offer. More Advanced users should check out the [Advanced Foundation Course](http://zurb.com/university/advanced-foundation-training?utm_source=Github%20Repo&utm_medium=website&utm_campaign=readme&utm_content=readme%20training%20link) to learn the Advanced skills that ZURB uses to deliver quality client work in short timeframes.
+The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
 
-## Testing
+### Manual Setup
 
-Foundation has three kinds of tests: JavaScript, Sass, and visual regression. Refer to our [testing guide](https://github.com/zurb/foundation-sites/wiki/Testing-Guide) for more details.
+To manually set up the template, first download it with Git:
 
-These commands will run the various tests:
+```bash
+git clone https://github.com/zurb/foundation-sites-template projectname
+```
 
-- `npm run test:sass`
-- `npm run test:javascript:phantomjs`
-- `npm run test:visual`
+Then open the folder in your command line, and install the needed dependencies:
 
-Testing Supported By<br/>
-<img width="160" src="http://foundation.zurb.com/sites/docs/assets/img/logos/browser-stack.svg" alt="BrowserStack"/>
+```bash
+cd projectname
+npm install
+bower install
+```
 
-## Contributing
-
-Check out our [contributing guide](http://foundation.zurb.com/develop/contribute.html) to learn how you can contribute to Foundation. You can also browse the [Help Wanted](https://github.com/zurb/foundation-sites/labels/help%20wanted) tag in our issue tracker to find things to do.
-
-Copyright (c) 2017 ZURB, inc.
+Finally, run `npm start` to run the Sass compiler. It will re-run every time you save a Sass file.
