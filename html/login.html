@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金融管理·登录</title>
+    <link rel="stylesheet" href="../bower_components/foundation-sites/dist/css/foundation.css">
+    <link rel="stylesheet" href="../css/login/login.css">
+    <link rel="stylesheet" href="../bower_components/unlock/css/unlock.css">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+</head>
+<body>
+<div class="grid-x" style="height: 100%">
+    <div class="cell small-6"></div>
+    <div class="cell small-6" style="position: relative">
+        <div class="login_panel">
+            <div class="login_logo"></div>
+            <div class="login_form">
+                <form id="loginForm" class="loginForm">
+                    <label for="login_userName">用户名：
+                        <input type="text"  transmit="true" placeholder="请输入您的用户名" id="login_userName" name="login_userName">
+                    </label>
+                    <label for="login_userName">密码：
+                        <input type="text" transmit="true" placeholder="请输入您的密码" id="login_password" name="login_password">
+                    </label>
+                    <div id="vertify" style="height: 40px ;width: 100%"></div>
+
+                </form>
+                <a type="button" id="login-submit" onclick="login()" class=" button expanded login_btn" disabled>登录</a>
+                <a type="button" class=" button hollow expanded register_btn" href="register.html">注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/foundation-sites/dist/js/foundation.min.js"></script>
+<script src="../bower_components/unlock/js/unlock.js"></script>
+<script src="../js/login/login.js"></script>
+</body>
+
+</html>

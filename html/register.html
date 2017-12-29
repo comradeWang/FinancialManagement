@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金融管理·注册</title>
+    <link rel="stylesheet" href="../bower_components/foundation-sites/dist/css/foundation.css">
+    <link rel="stylesheet" href="../css/login/register.css">
+    <link rel="stylesheet" href="../bower_components/unlock/css/unlock.css">
+    <link rel="shortcut icon" href="../img/favicon.ico">
+</head>
+<body>
+<div class="register-panel">
+    <div class="register-title text-center">用户注册</div>
+    <div class="register-form">
+        <form>
+            <label for="register_userName">用户名：
+                <input type="text"  transmit="true" placeholder="请输入您的用户名" id="register_userName" name="register_userName">
+            </label>
+            <label for="register_userName">真实姓名：
+                <input type="text"  transmit="true" placeholder="请输入您的真实姓名" maxlength="4" id="register_realName" name="register_realName">
+            </label>
+            <label>性别
+                <select>
+                    <option value="1">男</option>
+                    <option value="2">女</option>
+                </select>
+            </label>
+            <label for="register_password">密码：
+                <input type="password" transmit="true" placeholder="请输入您的密码" maxlength="15" id="register_password" name="register_password">
+            </label>
+            <label for="ensure_register_password">确认密码：
+                <input type="password" transmit="true" placeholder="请输入您的密码" maxlength="15" id="ensure_register_password" name="ensure_register_password">
+            </label>
+        </form>
+    </div>
+    <div class="register-btn-container">
+        <div class="grid-x">
+            <div class="small-6 cell">
+                <a class="button primary" onclick="register()">注册</a>
+            </div>
+            <div class="small-6 cell">
+                <a class="button secondary" href="login.html">返回登录</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/foundation-sites/dist/js/foundation.min.js"></script>
+<script src="../bower_components/unlock/js/unlock.js"></script>
+<script src="../js/login/register.js"></script>
+</html>
